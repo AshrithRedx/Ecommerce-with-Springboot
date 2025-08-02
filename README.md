@@ -119,6 +119,19 @@ npm run dev
 | POST   | `/api/product/{id}/reduce-stock?quantity=xx` | Reduce stock quantity on purchase     |
 
 
+---
+## Screenshots
+
+### ShopPal Homepage
+
+![ShopPal Homepage Screenshot](assets/shop-Homepage.png)
+
+### Product Detail with Cart
+
+![Product Detail Page](assets/p1.png)
+
+### Checkout from Cart
+![Cart Cehckout Page](assets/checkout.png)
 
 
 
