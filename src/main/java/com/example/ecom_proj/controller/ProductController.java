@@ -70,14 +70,27 @@ public class ProductController {
             return new ResponseEntity<> ("Deleted", HttpStatus.OK);
         }
         else
-            return new ResponseEntity<>("Product Not Found Bitch", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("Product Not Found,Try again with a different keyword :)", HttpStatus.NOT_FOUND);
     }
 
     @GetMapping("/products/search")
-    public ResponseEntity<List<Product>> searchProducts(@RequestPart String keyword){
+    public ResponseEntity<List<Product>> searchProducts(@RequestParam String keyword){
         List<Product> products = service.searchProducts(keyword);
         return new ResponseEntity<>(products, HttpStatus.OK);
     }
+
+    @PostMapping("/product/{id}/reduce-stock")
+    public ResponseEntity<String> reduceStock(@PathVariable int id, @RequestParam int quantity) {
+        try {
+            service.reduceStock(id, quantity);
+            // call instance method
+            return ResponseEntity.ok("Stock updated");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
+
+    }
+
 
 
 

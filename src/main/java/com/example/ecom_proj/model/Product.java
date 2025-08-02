@@ -43,7 +43,7 @@ public class Product {
     }
 
     public void setDesc(String description) {
-        this.description = this.description;
+        this.description = description;
     }
 
     public int getStockQuantity() {
