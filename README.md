@@ -46,7 +46,6 @@ This project demonstrates core e-commerce features including product management,
 ## Project Structure
 root/
 ├── backend/ # Spring Boot backend application
-│ 
 │ │ ├── main/java/com/example/ecom_proj/ # Main Java source
 │ │ ├── resources/ # Configurations, static files
 │ ├── pom.xml # Maven config & dependencies
@@ -133,7 +132,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact / Demo
 
-Feel free to contact me at [your email] for live demo access, questions, or collaborations.
+Feel free to contact me at @ashrithreddy125@gmail.com for live demo access, questions, or collaborations.
 
 ---
 
