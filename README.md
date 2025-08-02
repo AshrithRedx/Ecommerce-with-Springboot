@@ -124,7 +124,7 @@ npm run dev
 
 ### ShopPal Homepage
 
-![ShopPal Homepage Screenshot](assets/shop-Homepage.png)
+![ShopPal Homepage Screenshot](assets/Homepage.png)
 
 ### Product Detail with Cart
 
